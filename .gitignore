@@ -1,0 +1,16 @@
+# gitignore
+# website: https://adeihouse.com
+
+# Ignore image files
+*.jpg
+*.jpeg
+*.png
+
+# Ignore table color file
+styles/color.css
+
+# Ignore fontawesome style file
+styles/fontawesome.5.10.2.min.css
+
+# Ignore web font files
+webfonts/

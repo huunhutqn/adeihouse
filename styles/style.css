@@ -1,0 +1,270 @@
+@import url("webfonts.css");
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* box-sizing reset*/
+	html {
+		box-sizing: border-box;
+		background: #fff;
+	}
+	*,
+	*:before,
+	*:after {
+		box-sizing: inherit;
+		margin: 0;
+		padding: 0;
+	}
+/* ./ box-sizing reset */
+
+
+html,
+body {
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+body {}
+
+.center {
+	margin: 0 auto;
+	/*max-width: 87.4375em; 1399px */
+	max-width: 75.000em; /* 1200px */
+}
+.full-width {
+	width: 100%;
+}
+.clear {
+	clear: both;
+}
+.text-center {
+	text-align: center;
+}
+.block {}
+.heading {
+	line-height: 2.2rem;
+	color: #DB5020;
+}
+.text {}
+.uppercase {
+	text-transform: uppercase;
+}
+a {
+	text-decoration: none;
+	color: unset;
+}
+h4 {
+	font-size: 1.1rem
+}
+
+/* menu */
+	.menu {
+		list-style: none;
+		display: flex;
+	}
+	.menu__item {}
+	.menu__item a {}
+	.menu__link {}
+/* ./menu */
+
+/* form */
+	.form-group {}
+/* ./form */
+
+/* page */
+	.page {
+		color: #3f3844;
+	}
+/* ./page */
+
+/* header */
+	.header {}
+	.page__head {
+		height: 100vh;
+		min-height: 550px;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: space-between;
+		background-image: url(../images/Thanh-Dia-My-Son-2.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-bottom: 2rem;
+	}
+	.background {}
+	.header__background {}
+	.header__background img {
+		width: 100%;
+	}
+	.address-bar {}
+	.header__address-bar {
+		background-color: #fff;
+	    box-shadow: 0px 2px 2px 0px #e7e7e7;
+	}
+	.address-bar__container {
+		display: flex;
+		justify-content: space-between;
+	}
+	.address-bar__info {}
+	.address-bar__info .menu {}
+	.address-bar__info .menu .menu__item {
+		padding-left: 5px;
+	}
+	.address-bar__info .menu .menu__item .menu__link {
+		padding-right: 5px;
+	}
+	.address-bar__info .menu .menu__item .menu__link i {
+		padding-right: 3px;
+		font-size: .8em;
+	}
+	.address-bar__menu {}
+	.address-bar__menu .menu {}
+	.address-bar__menu .menu .menu__item {}
+	.address-bar__menu .menu .menu__item .menu__link {
+		padding-right: 7px;
+		padding-left: 7px;
+	}
+	.address-bar__container,
+	.address-bar__info .menu .menu__item .menu__link,
+	.address-bar__menu .menu .menu__item .menu__link {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.header-main {}
+	.header__main {}
+	.header-main__container {}
+	.logo {}
+	.header-main__logo {
+		padding: 10px;
+	}
+	.header-main__logo img {}
+	#navigation {}
+	.header-main__nav {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: #fff;
+		box-shadow: 0px 2px 2px 0px #e7e7e7;
+	}
+	.navigation {}
+	.navigation .menu {
+		justify-content: center;
+	}
+	.navigation .menu .menu__item {}
+	.navigation .menu .menu__item:not(:last-of-type):after {
+		content: " |";
+		color: #dbdbdb;
+	}
+	.navigation .menu .menu__item a {}
+	.navigation .menu .menu__link {
+		font-size: 1.1rem;
+		font-weight: 600;
+	    padding: 10px 15px;
+	    text-transform: uppercase;
+	    letter-spacing: .5px;
+	}
+	.navigation .menu .menu__link.menu__link--active {
+		color: #d63700;
+	}
+/* ./header */
+
+/* main */
+	.main {}
+	.page__main {
+		box-shadow: 0 -5px 10px 10px #fff;
+	}
+	.main__container {
+		padding: 3rem 0 0;
+	}
+	.main__content {}
+/* ./main */
+
+/* footer */
+	.footer {}
+	.page__foot {
+		margin-top: 3rem;
+	}
+	.newsletter {}
+	.footer__newsletter {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 2rem;
+	}
+	.newsletter__container {}
+	.newsletter__header {}
+	.newsletter__main {}
+	.newsletter__form {
+		display: flex;
+		flex-direction: column;
+	}
+	.newsletter__form button {
+		background-color: #E58260;
+	    color: #fff;
+	    border: none;
+	    cursor: pointer;
+	    letter-spacing: .2rem;
+	    font-size: 1.1rem;
+	}
+	.newsletter__form input {
+		padding-right: .8rem;
+		padding-left: .8rem;
+		border: .05rem solid #dbdbdb;
+	}
+	.newsletter__main p,
+	.newsletter__form input,
+	.newsletter__form button {
+		line-height: 2rem;
+		font-family: 'Barlow Condensed', sans-serif;
+	}
+	.newsletter__form input:last-of-type,
+	.newsletter__form button {
+		margin-top: .2rem;
+	}
+	.follow {}
+	.footer__follow {
+		margin-bottom: 2rem;
+	}
+	.follow__container {}
+	.follow__header {}
+	.follow__main {}
+	.follow__main .menu {
+		justify-content: space-around;
+	}
+	.follow__main .menu .menu__item {}
+	.follow__main .menu .menu__item a {}
+	.follow__main .menu .menu__item .menu__link {
+		padding: 5px;
+	}
+	.follow__main .menu .menu__item .menu__link i {
+		padding-right: 5px
+	}
+	.copyright {}
+	.footer__copyright {
+		font-size: .9rem;
+	    letter-spacing: .1rem;
+	    margin-bottom: 2rem;
+	}
+	.copyright--name {}
+	.copyright--year {}
+	.copyright--name,
+	.copyright--year {
+		line-height: 2rem;
+	}
+/* ./footer */
+
+.address-bar__info .menu .menu__item:hover .menu__link,
+.address-bar__info .menu .menu__item:hover .fab,
+.address-bar__menu .menu .menu__item .menu__link:hover,
+.navigation .menu .menu__link:not(.menu__link--active):hover,
+.follow__main .menu .menu__item .menu__link:hover {
+	color: #E06940;
+}
