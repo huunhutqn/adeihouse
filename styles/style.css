@@ -48,6 +48,10 @@ body {}
 .clear {
 	clear: both;
 }
+.column {
+	margin-left: 1%;
+	margin-right: 1%;
+}
 .text-center {
 	text-align: center;
 }
@@ -60,12 +64,22 @@ body {}
 .uppercase {
 	text-transform: uppercase;
 }
+.btn {
+    border: 1px solid;
+    letter-spacing: .1rem;
+}
+.btn:hover {
+	cursor: pointer;
+}
 a {
 	text-decoration: none;
 	color: unset;
 }
 h4 {
-	font-size: 1.1rem
+	font-size: 1.2rem;
+}
+h5 {
+	font-size: 1.1rem;
 }
 
 /* menu */
@@ -182,10 +196,167 @@ h4 {
 	.page__main {
 		box-shadow: 0 -5px 10px 10px #fff;
 	}
+	.page__main .heading {
+		padding-bottom: 1rem;
+	}
 	.main__container {
 		padding: 3rem 0 0;
 	}
-	.main__content {}
+	.main__content__containter {}
+	.main__content__head {}
+	.main__content__body {}
+	.main__content__body__container {
+		margin: 0;
+	}
+	.main__content__body__container .main__content__right:last-of-type {
+		margin-top: 1.4%;
+	}
+	.main__content__left {
+		float: left;
+		width: 66.6%;
+		position: relative;
+	}
+	.main__content__left__img {
+		line-height: 0;
+		position: relative;
+	}
+	.main__content__left__img img {
+		max-width: 100%;
+		height: auto;
+	}
+	.main__content__left__text {}
+	.main__content__left__text h4 {
+		padding: 4rem 2rem 1.2rem;
+	}
+	.main__content__right {
+		float: right;
+		width: 32%;
+		position: relative;
+	}
+	.main__content__right__above {}
+	.main__content__right__below {}
+	.main__content__right__img {
+		line-height: 0;
+		position: relative;
+	}
+	.main__content__right__img img {
+		max-width: 100%;
+		height: auto;
+	}
+	.main__content__right__text {}
+	.main__content__right__text h5 {
+		padding: 2.9rem 2rem 1.1rem;
+	}
+	.main__content__left,
+	.main__content__right {
+		display: block;
+		overflow: hidden;
+	}
+	.main__content__left__text,
+	.main__content__right__text {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: -.1rem;
+	}
+	.main__content__left__text h4,
+	.main__content__right__text h5 {
+		background: url(../images/blog_masonry_tile_gradient.png) top left repeat-x;
+	}
+	.main__content__left__text h4 a,
+	.main__content__right__text h5 a {
+		letter-spacing: .1rem;
+	    color: #fdf6f4;
+	    font-weight: 400;
+	}
+	.main__content__bot {}
+	.main__content--seemore {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	.main__content--seemore .btn {
+		padding: 6px 20px;
+		border-color:  #E58260;
+	}
+	.main__content--seemore .btn:hover {
+	    color: #fff;
+	    background-color: #E58260;
+	    border: none;
+	}
+	.main__content--one {
+		display: flex;
+		flex-direction: column;
+	}
+	.main__content--two {}
+	.main__content--two .main__content__body__container {
+		display: flex;
+		justify-content: space-between;
+	}
+	.main__content__package {
+		position: relative;
+		width: 30%;
+		/*background-color: #eeea;*/
+	}
+	.package__container {
+		display: flex;
+		flex-direction: column;
+	}
+	.package__photo {
+		padding: 15px;
+	}
+	.package__photo img {
+		width: 100%;
+		max-width: 300px;
+		height: auto;
+	}
+	.package__photo--rotate-l {
+		transform: rotate(-2deg);
+	}
+	.package__photo--rotate-r {
+		transform: rotate(2deg);
+	}
+	.package__photo div {
+		position: absolute;
+	    width: 100%;
+	    left: 0;
+	    top: 40%;
+	}
+	.package__photo a {
+	    color: #fff;
+	    padding: 10px 15px;
+	    font-size: 1.1rem;
+	    background-color: rgb(238,238,238,.2);
+	}
+	.package__photo a:hover {
+		color: #fff;
+	    background-color: #E58260;
+	}
+	.package__desc h5 {
+		font-weight: 500;
+		padding-left: .5rem;
+		padding-right: .5rem;
+	}
+	.main__content--three {}
+	.main__content--three .main__content__body img.bg {
+		width: 100%;
+	}
+	.main__content--three .main__content__body--bg {
+		position: relative;
+	}
+	.main__content--three .main__content__body .main__content__body__container {
+		position: relative;
+	}
+	.main__content--three .review {
+		position: absolute;
+	}
+	.review__guest {
+		padding: 2rem;
+	}
+	.main__content--one,
+	.main__content--two,
+	.main__content--three {
+		margin-bottom: 2rem;
+	}
 /* ./main */
 
 /* footer */
@@ -252,6 +423,8 @@ h4 {
 		font-size: .9rem;
 	    letter-spacing: .1rem;
 	    margin-bottom: 2rem;
+	    border-top: 1px solid #eee;
+	    padding-top: 1rem;
 	}
 	.copyright--name {}
 	.copyright--year {}
